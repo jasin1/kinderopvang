@@ -18,12 +18,12 @@ if (soortopvang == 'voorschoolse')
       return $(voorschoolsedagen).val();
     }).get().join(', ');
 
-    //$('#voorschoolse_opvang').show();
-    //$('#naschoolse_opvang').hide();
-    //$('#buitenschoolse_opvang').hide();
-    //$('#vakantie_opvang').hide();
-    //$('#dagopvang_opvang').hide();
-    //$('#peuterspeelzaal_opvang').hide();
+    $('#voorschoolse_opvang').show();
+    $('#naschoolse_opvang').hide();
+    $('#buitenschoolse_opvang').hide();
+    $('#vakantie_opvang').hide();
+    $('#dagopvang_opvang').hide();
+    $('#peuterspeelzaal_opvang').hide();
 
 
               if (tarief == 7.50) // Schoolse opvang zonder vakantie periode
@@ -76,12 +76,12 @@ if (soortopvang == 'voorschoolse')
               var naschoolsedagen            = $('input[name="naschoolsedagen"]:checked').map(function(_, naschoolsedagen) {
                 return $(naschoolsedagen).val();
               }).get().join(', ');
-              //$('#voorschoolse_opvang').hide();
-              //$('#naschoolse_opvang').show();
-              //$('#buitenschoolse_opvang').hide();
-              //$('#vakantie_opvang').hide();
-              //$('#dagopvang_opvang').hide();
-              //$('#peuterspeelzaal_opvang').hide();
+              $('#voorschoolse_opvang').hide();
+              $('#naschoolse_opvang').show();
+              $('#buitenschoolse_opvang').hide();
+              $('#vakantie_opvang').hide();
+              $('#dagopvang_opvang').hide();
+              $('#peuterspeelzaal_opvang').hide();
               if (tarief == 7.50) // Schoolse opvang zonder vakantie periode
               {
         var soortopvang				= 'NSO zonder vakantie opvang';				
@@ -143,11 +143,11 @@ if (soortopvang == 'voorschoolse')
                 return $(buitenschoolsedagen).val();
               }).get().join(', ');
       $('#voorschoolse_opvang').hide();
-              //$('#naschoolse_opvang').hide();
-              //$('#buitenschoolse_opvang').show();
-              //$('#vakantie_opvang').hide();
-              //$('#dagopvang_opvang').hide();
-              //$('#peuterspeelzaal_opvang').hide();
+              $('#naschoolse_opvang').hide();
+              $('#buitenschoolse_opvang').show();
+              $('#vakantie_opvang').hide();
+              $('#dagopvang_opvang').hide();
+              $('#peuterspeelzaal_opvang').hide();
           
       
               if (tarief == 6.75) // Schoolse opvang zonder vakantie periode
@@ -255,12 +255,12 @@ if (soortopvang == 'voorschoolse')
               var dagopvangdagen            = $('input[name="dagopvangdagen"]:checked').map(function(_, dagopvangdagen) {
                 return $(dagopvangdagen).val();
               }).get().join(', ');
-              //$('#voorschoolse_opvang').hide();
-              //$('#naschoolse_opvang').hide();
-              //$('#buitenschoolse_opvang').hide();
-              //$('#vakantie_opvang').hide();
-              //$('#dagopvang_opvang').show();
-              //$('#peuterspeelzaal_opvang').hide();
+              $('#voorschoolse_opvang').hide();
+              $('#naschoolse_opvang').hide();
+              $('#buitenschoolse_opvang').hide();
+              $('#vakantie_opvang').hide();
+              $('#dagopvang_opvang').show();
+              $('#peuterspeelzaal_opvang').hide();
               if (tarief == 8.15) // Schoolse opvang zonder vakantie periode
               {
         var soortopvang				= 'KDV halve dagopvang (6 uur p/d)';	
@@ -297,12 +297,12 @@ if (soortopvang == 'voorschoolse')
               var peuterspeelzaaldagen            = $('input[name="peuterspeelzaaldagen"]:checked').map(function(_, peuterspeelzaaldagen) {
                 return $(peuterspeelzaaldagen).val();
               }).get().join(', ');
-              //$('#voorschoolse_opvang').hide();
-              //$('#naschoolse_opvang').hide();
-              //$('#buitenschoolse_opvang').hide();
-              //$('#vakantie_opvang').hide();
-              //$('#dagopvang_opvang').hide();
-              //$('#peuterspeelzaal_opvang').show();
+              $('#voorschoolse_opvang').hide();
+              $('#naschoolse_opvang').hide();
+              $('#buitenschoolse_opvang').hide();
+              $('#vakantie_opvang').hide();
+              $('#dagopvang_opvang').hide();
+              $('#peuterspeelzaal_opvang').show();
               var uren                      = 6;
               var totaal_uren               = aantal_peuterspeelzaaldagen * uren;
               var totaal_urenjaar           = totaal_uren * 40; 
